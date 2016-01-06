@@ -10,3 +10,8 @@
 04/01/2016 - #3: Find through Association.
   - Theres no need to pass foreign keys in find conditions, just do the find through a has_many association.
   - can perform a 'find' through an association
+
+05/01/2016 - #4: Move Find into Model
+  - Moving a find into the model cleans up controllers and removes duplication
+  - Can call custom find methods through association
+  - Rails allows class methods through associations, which is very powerful

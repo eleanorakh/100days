@@ -23,3 +23,14 @@
   - Command method: causes some change to happen in the world around it
   - Query method: returns some information
   - Command-Query separation - states that keeping command and query methods separated in a program makes that program simpler and more comprehensible.
+
+05/01/2016 - #20: Struct
+  - Can use struct to quickly construct classes
+  - Typically, when we create structs in ruby we immediately assign the resulting class to a constant.
+  - Ruby has a special rule for when an anonymous class or module is assigned to a constant for the first time. When that happens, Ruby sets the name of the class or module to the name of the constant (this only happens once)  - this is the only time that assigning an object to a variable or a constant causes a change to the object itself
+  - can get and set values using hash like syntax structures
+  - symbols and strings can be used interchangeably as keys
+  - equality operator - struct defines it so that instance with equal attributes are considered equal
+  - unlike attributes defined with attr_accessor, structs can introspect and iterate over their attributes
+  - structs also have enumerable
+  - struct is a powerful tool for defining rich data structures
