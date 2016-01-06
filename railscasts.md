@@ -21,3 +21,12 @@
   - But can't add conditions onto custom methods
   - with_scope defines the scope of the search/find
   - As he says in the screencast, any find executed in the new with_scope block automatically inherits the specified options (which you would have set)
+
+07/01/2016 - #6: Shortcut Blocks with Symbol to_proc
+  - example: (&:name) is a Symbol to_proc
+  - This is something that Rails adds to Ruby
+  - It allows you to use a shortcut if you just want to call a method on the object that the block set
+  - So you can pass a parameter with an & and the name of the method as a symbol
+  - can be on any method that accepts a block and passes one object to it
+  - example: projects.each(&:save!) saves all(each) of the projects
+  - it's useful to combine multiple method calls or when you have string methods together with blocks

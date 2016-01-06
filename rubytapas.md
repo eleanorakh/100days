@@ -35,10 +35,14 @@
   - structs also have enumerable
   - struct is a powerful tool for defining rich data structures
 
-05/01/2016 - #1: Binary Literals
+06/01/2016 - #1: Binary Literals
   - Literal syntax is things like strings, floating points e.ct
   - Ruby has a literal index for hexidecimal and octal numbers
   - Octal numbers are useful for things like specifying unix file permissions (hard)
   - But Ruby also supports binary literals, which aren't as common
   - Binary literals are useful for translating octal numbers into permissions (I think?)
   - Permission order: U(ser) G(roup) O(ther)
+
+07/01/2016 - #2: Large Integer Literals
+  - Hard to visualise the number of digits in a numeric literal if it gets too big, so it's common to break digits into groups
+  - Ruby let's us instert underscores anywhere we want in Integer Literals
