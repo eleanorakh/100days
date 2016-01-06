@@ -15,3 +15,9 @@
   - Moving a find into the model cleans up controllers and removes duplication
   - Can call custom find methods through association
   - Rails allows class methods through associations, which is very powerful
+
+06/01/2016 - #5: Using with_scope
+  - In this example there is a Task Model with a custom find method for all incomplete tasks, which is limiting.
+  - But can't add conditions onto custom methods
+  - with_scope defines the scope of the search/find
+  - As he says in the screencast, any find executed in the new with_scope block automatically inherits the specified options (which you would have set)

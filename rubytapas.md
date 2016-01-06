@@ -34,3 +34,11 @@
   - unlike attributes defined with attr_accessor, structs can introspect and iterate over their attributes
   - structs also have enumerable
   - struct is a powerful tool for defining rich data structures
+
+05/01/2016 - #1: Binary Literals
+  - Literal syntax is things like strings, floating points e.ct
+  - Ruby has a literal index for hexidecimal and octal numbers
+  - Octal numbers are useful for things like specifying unix file permissions (hard)
+  - But Ruby also supports binary literals, which aren't as common
+  - Binary literals are useful for translating octal numbers into permissions (I think?)
+  - Permission order: U(ser) G(roup) O(ther)
