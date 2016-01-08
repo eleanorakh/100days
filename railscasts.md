@@ -30,3 +30,12 @@
   - can be on any method that accepts a block and passes one object to it
   - example: projects.each(&:save!) saves all(each) of the projects
   - it's useful to combine multiple method calls or when you have string methods together with blocks
+
+08/01/2016 - #7: All about layouts
+  - layout is a view file that defines what surrounds a template
+  - yield is important as it tells the layout where to place the content for the template that is using the layout
+  - layout is global, so it will be added to any action in any controller across the application
+  - layout command can also specify the name of the layout used within a controller
+  - this overrides any controller specific or application specific layouts
+  - layouts can also be used dynamically i.e. may only want the admin layout to be used when a user is logged it - can be done by passing a symbol as an argument to the layout command, creating a method with the same name as the symbol thus determining which layout should be used.
+  - can also be used to restrict a layout to a single action in a controller (render command) - which overrides any controller specific layout.

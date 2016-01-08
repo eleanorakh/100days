@@ -46,3 +46,10 @@
 07/01/2016 - #2: Large Integer Literals
   - Hard to visualise the number of digits in a numeric literal if it gets too big, so it's common to break digits into groups
   - Ruby let's us instert underscores anywhere we want in Integer Literals
+
+08/01/2016 - #3: Character Literals
+  - Unlike languages like C, Ruby does not have a character data type distinct from the string type
+  - But it has character literal syntax
+  - to quote single character, preceed character with a ? - result is a one character long string
+  - not that useful, except when making strings that should only be one character long more distinct.
+  -
